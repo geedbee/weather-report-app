@@ -10,6 +10,9 @@ function formatDate(date){
 }
 
 const parseForecastData = function parseForecastData(data){
+    if (!data){
+        return [];
+    }
     let dataArr = [];
     for (const d of data){
         const object = {
